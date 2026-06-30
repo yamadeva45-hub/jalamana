@@ -1,0 +1,145 @@
+<!doctype html>
+<html amp lang="id">
+<head>
+    <meta charset="utf-8">
+    <title>sulapedia - Daftar & Login</title>
+    <link rel="canonical" href="https://sulapedia.neocities.org/" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    
+    <style amp-custom>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f001a, #1a0033, #2a004d);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 40px 20px 30px;
+        }
+        
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8em;
+            font-weight: 700;
+            background: linear-gradient(90deg, #ffd700, #ff00ff, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+        }
+        
+        .subtitle {
+            font-size: 1.15em;
+            opacity: 0.85;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+        
+        .hero-image {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6),
+                        0 0 60px rgba(255, 0, 255, 0.3);
+            margin-bottom: 40px;
+        }
+        
+        .btn {
+            display: block;
+            width: 88%;
+            margin: 18px auto;
+            padding: 18px 20px;
+            font-size: 1.25em;
+            font-weight: 700;
+            border-radius: 9999px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: 0.6s;
+        }
+        
+        .btn:hover::before {
+            left: 200%;
+        }
+        
+        .btn-daftar {
+            background: linear-gradient(45deg, #00ff88, #00cc66);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.4);
+        }
+        
+        .btn-login {
+            background: linear-gradient(45deg, #ff00aa, #cc0088);
+            box-shadow: 0 10px 30px rgba(255, 0, 170, 0.4);
+        }
+        
+        .btn:active {
+            transform: scale(0.96);
+        }
+        
+        .footer {
+            margin-top: 50px;
+            font-size: 0.85em;
+            opacity: 0.6;
+        }
+        
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 20px #ffd700; }
+            to { text-shadow: 0 0 40px #ff00ff, 0 0 60px #00ffff; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo + Judul -->
+        <div class="logo glow">sulapedia</div>
+        <p class="subtitle">Main Aman • Bayar Cepat • Jackpot Besar</p>
+        
+        <!-- Gambar Hero -->
+        <div class="hero-image">
+            <amp-img 
+                src="https://via.placeholder.com/800x500/1a0033/ffffff?text=sulapedia+HERO" 
+                width="800" 
+                height="500" 
+                layout="responsive"
+                alt="sulapedia Banner Modern">
+            </amp-img>
+        </div>
+        
+        <!-- Tombol -->
+        <a href="https://sulapedia.neocities.org/daftar" class="btn btn-daftar">
+            🚀 DAFTAR SEKARANG - GRATIS
+        </a>
+        
+        <a href="https://sulapedia.neocities.org/login" class="btn btn-login">
+            🔑 MASUK KE AKUN
+        </a>
+        
+        <div class="footer">
+            © 2026 sulapedia • Terpercaya Sejak 2024
+        </div>
+    </div>
+</body>
+</html>
